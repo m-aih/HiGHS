@@ -79,7 +79,7 @@ jobs:
           path: ${{runner.workspace}}/build32/dotnet/Highs.Native/runtimes/win-x64/
 
   build_linux:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - name: Build HiGHS
@@ -100,7 +100,7 @@ jobs:
           path: ${{runner.workspace}}/build/dotnet/Highs.Native/runtimes
 
   build_linux_arm64:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - name: Build HiGHS
