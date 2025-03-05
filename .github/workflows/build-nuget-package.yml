@@ -83,7 +83,7 @@ jobs:
     container: 
       image: stabletec/build-core:debian-12
       volumes:
-        - ${{runner.workspace}}:/build
+        - $GITHUB_WORKSPACE:/build
     steps:
       - uses: actions/checkout@v4
       - name: Build HiGHS
@@ -108,7 +108,7 @@ jobs:
     container: 
       image: stabletec/build-core:debian-12
       volumes:
-        - ${{runner.workspace}}:/build
+        - $GITHUB_WORKSPACE:/build
     steps:
       - uses: actions/checkout@v4
       - name: Build HiGHS
