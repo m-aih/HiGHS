@@ -80,8 +80,7 @@ jobs:
 
   build_linux:
     runs-on: ubuntu-latest
-    container: 
-      image: stabletec/build-core:debian-10
+    container: stabletec/build-core:debian-11
     steps:
       - uses: actions/checkout@v4
       - name: Build HiGHS
@@ -103,8 +102,7 @@ jobs:
 
   build_linux_arm64:
     runs-on: ubuntu-latest
-    container: 
-      image: stabletec/build-core:debian-10
+    container: stabletec/build-core:debian-11
     steps:
       - uses: actions/checkout@v4
       - name: Build HiGHS
